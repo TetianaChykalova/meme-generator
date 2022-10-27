@@ -1,14 +1,18 @@
 import {NavLink} from "react-router-dom";
-
+import s from './Cats.module.css'
 
 const Cats = (props) => {
     return (
-        <div>
-            <button>
-                <NavLink to='/home'>Back to home</NavLink>
-            </button>
+        <div className={s.wrapper}>
+            <div>
+                <button>
+                    <NavLink to='/home'>на головну</NavLink>
+                </button>
+            </div>
 
-            Cats content
+            <div>
+                Cats content
+            </div>
         </div>
     )
 }
